@@ -20,6 +20,10 @@
     <url-pattern>/DisplayServlet</url-pattern>
     <url-pattern>/DisplayServletForBooking</url-pattern>
     <url-pattern>/display.jsp</url-pattern>
+    <url-pattern>/BookTicket.jsp</url-pattern>
+    <url-pattern>/BookingHistory.jsp</url-pattern>
+    
+    
     
     <url-pattern>/MovieServlet</url-pattern>
   </filter-mapping>
