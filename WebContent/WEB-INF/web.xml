@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>REassignment</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>com.bitwise.filters.AuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/LoginServlet</url-pattern>
+    <url-pattern>/AddMovieShow.jsp</url-pattern>
+    <url-pattern>/DisplayServlet</url-pattern>
+    <url-pattern>/DisplayServletForBooking</url-pattern>
+    <url-pattern>/display.jsp</url-pattern>
+    
+    <url-pattern>/MovieServlet</url-pattern>
+  </filter-mapping>
+</web-app>
